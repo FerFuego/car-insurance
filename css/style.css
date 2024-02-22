@@ -9,6 +9,9 @@ body {
     width: 100%;
     padding: 15px;
 }
+label {
+  cursor: pointer;
+}
 .error {
     background-color: #FBE9E7;
     border: 1px solid #F4511E;
@@ -24,6 +27,14 @@ body {
     margin-bottom: 20px;
     text-align: center;
     color: rgb(4, 150, 50);
+}
+.cotizando {
+  background-color: rgb(211, 249, 187);
+  border: 1px solid rgb(50, 167, 0);
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(4, 150, 50);
 }
 .error p {
     margin:0;
@@ -66,7 +77,7 @@ body {
 }
 
 .spinner {
-    margin: 100px auto;
+    margin: 20px auto;
     width: 50px;
     height: 40px;
     text-align: center;

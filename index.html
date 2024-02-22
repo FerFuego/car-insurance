@@ -16,7 +16,7 @@
             <header class="bg-teal-500 text-white py-3 font-bold uppercase">
                 <h1 class="text-center">Cotiza tu seguro de Auto</h1>
             </header>
-            <form class="mt-10 max-w-lg mx-auto" action="#" id="cotizar-seguro">
+            <form class="mt-10 max-w-lg mx-auto" action="#" id="form-cotizar-seguro">
                 <div class="flex items-center mb-5">
                     <label class="font-bold  uppercase mr-2 w-20" for="marca">Marca:</label>
                     <select class="flex-1 bg-gray-100 p-3 appearance-none" id="marca">
@@ -35,17 +35,19 @@
 
                     <div class="flex justify-around mt-5">
                         <div>
-                            <label class="font-bold  uppercase mr-2">Básico</label>
-                            <input type="radio" name="tipo" value="basico" checked>
+                            <label class="font-bold  uppercase mr-2">Básico
+                                <input type="radio" name="tipo" value="basico" checked>
                             </label>
                         </div>
                         <div>
-                            <label class="font-bold  uppercase mr-2">Completo</label>
-                            <input type="radio" name="tipo" value="completo">
+                            <label class="font-bold  uppercase mr-2">Completo
+                                <input type="radio" name="tipo" value="completo">
                             </label>
                         </div>
                     </div>
                 </fieldset>
+
+                <div id="resultado"></div>
 
                 <div id="cargando" class="hidden">
                     <div class="spinner">
@@ -56,9 +58,9 @@
                         <div class="rect5"></div>
                     </div>
                 </div>
-                <div id="resultado"></div>
+
                 <div class="flex  justify-center py-4">
-                    <button type="submit"
+                    <button type="submit" id="cotizar-seguro"
                         class="mx-auto bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-20 rounded">Cotizar
                         Seguro
                     </button>
